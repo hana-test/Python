@@ -1,6 +1,22 @@
-num1 = input("enter the first no: ")
-num2 = input("enter the second no: ")
-result = float(num1)+float(num2)
-#float() or int() changing the user input from string to an integer
-# if you write num1+num2 python will concincate it as two string
-print(result)
+import test_calc
+
+def add(x, y):
+    """Add Function"""
+    return x + y
+
+
+def subtract(x, y):
+    """Subtract Function"""
+    return x - y
+
+
+def multiply(x, y):
+    """Multiply Function"""
+    return x * y
+
+
+def divide(x, y):
+    """Divide Function"""
+    if y == 0:
+        raise ValueError('Can not divide by zero!')
+    return x / y
